@@ -1,0 +1,196 @@
+rodrigo@rodrigo-Lenovo-IdeaPad-S340-15IWL:~/code/dda/yearn-vaults$ brownie test tests/functional/ -s -n auto
+Brownie v1.12.4 - Python development framework for Ethereum
+
+============================================================= test session starts =============================================================
+platform linux -- Python 3.8.5, pytest-6.0.1, py-1.10.0, pluggy-0.13.1 -- /home/rodrigo/.local/pipx/venvs/eth-brownie/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'brownie-verbose' -> verbosity=2, deadline=None, max_examples=50, stateful_step_count=10, report_multiple_bugs=False, database=DirectoryBasedExampleDatabase(PosixPath('/home/rodrigo/.brownie/hypothesis'))
+rootdir: /home/rodrigo/code/dda/yearn-vaults
+plugins: eth-brownie-1.12.4, hypothesis-5.41.3, forked-1.3.0, web3-5.11.1, xdist-1.34.0
+[gw0] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw1] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw2] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw3] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw4] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw5] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw6] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw7] linux Python 3.8.5 cwd: /home/rodrigo/code/dda/yearn-vaults
+[gw2] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw0] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw3] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw1] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw4] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw6] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw5] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0]
+[gw7] Python 3.8.5 (default, Jul 28 2020, 12:59:40)  -- [GCC 9.3.0] 
+gw0 [80] / gw1 [80] / gw2 [80] / gw3 [80] / gw4 [80] / gw5 [80] / gw6 [80] / gw7 [80]
+scheduling tests via LoadFileScheduling
+
+tests/functional/strategy/test_rate_limit.py::test_simple_limit 
+tests/functional/strategy/test_fees.py::test_performance_fees 
+tests/functional/strategy/test_misc.py::test_harvest_tend_authority 
+tests/functional/registry/test_release.py::test_release_management 
+tests/functional/registry/test_deployment.py::test_deployment_management 
+tests/functional/strategy/test_config.py::test_api_adherrance 
+tests/functional/registry/test_config.py::test_registry_deployment 
+tests/functional/strategy/test_migration.py::test_good_migration 
+[gw1] PASSED tests/functional/strategy/test_config.py::test_api_adherrance 
+tests/functional/strategy/test_config.py::test_strategy_deployment 
+[gw2] PASSED tests/functional/registry/test_config.py::test_registry_deployment 
+tests/functional/registry/test_config.py::test_registry_setGovernance 
+[gw2] PASSED tests/functional/registry/test_config.py::test_registry_setGovernance 
+tests/functional/registry/test_config.py::test_banksy 
+[gw1] PASSED tests/functional/strategy/test_config.py::test_strategy_deployment 
+tests/functional/strategy/test_config.py::test_strategy_setEmergencyExit 
+[gw7] PASSED tests/functional/strategy/test_rate_limit.py::test_simple_limit 
+tests/functional/strategy/test_rate_limit.py::test_zero_limit 
+[gw4] PASSED tests/functional/strategy/test_fees.py::test_performance_fees 
+tests/functional/strategy/test_fees.py::test_zero_fees 
+[gw2] PASSED tests/functional/registry/test_config.py::test_banksy 
+[gw5] PASSED tests/functional/strategy/test_misc.py::test_harvest_tend_authority 
+tests/functional/strategy/test_misc.py::test_harvest_tend_trigger 
+[gw6] PASSED tests/functional/strategy/test_migration.py::test_good_migration 
+tests/functional/vault/test_config.py::test_api_adherrance 
+[gw2] PASSED tests/functional/vault/test_config.py::test_api_adherrance 
+tests/functional/vault/test_config.py::test_vault_deployment 
+tests/functional/strategy/test_migration.py::test_bad_migration 
+[gw7] PASSED tests/functional/strategy/test_rate_limit.py::test_zero_limit 
+tests/functional/strategy/test_withdrawal.py::test_withdraw 
+[gw1] PASSED tests/functional/strategy/test_config.py::test_strategy_setEmergencyExit 
+tests/functional/strategy/test_config.py::test_strategy_setParams[strategist-setStrategist-gov-None] Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.5.16+commit.9c3226ce
+
+[gw2] PASSED tests/functional/vault/test_config.py::test_vault_deployment 
+[gw4] PASSED tests/functional/strategy/test_fees.py::test_zero_fees 
+tests/functional/vault/test_config.py::test_vault_name_symbol_override 
+tests/functional/strategy/test_fees.py::test_max_fees 
+[gw2] PASSED tests/functional/vault/test_config.py::test_vault_name_symbol_override 
+ 20%|███████████████████▉                                                                                | 1.60M/8.01M [00:00<00:02, 3.18MiB/s]
+ 23%|███████████████████████                                                                             | 1.84M/8.01M [00:00<00:02, 2.57MiB/s]
+ 26%|█████████████████████████▊                                                                          | 2.07M/8.01M [00:00<00:02, 2.24MiB/s]
+tests/functional/strategy/test_config.py::test_strategy_setParams[rewards-setRewards-strategist-None] 
+ 28%|████████████████████████████▍                                                                       | 2.28M/8.01M [00:00<00:02, 2.03MiB/s]
+ 31%|██████████████████████████████▉                                                                     | 2.48M/8.01M [00:00<00:02, 1.93MiB/s]
+ 33%|█████████████████████████████████▎                                                                  | 2.67M/8.01M [00:01<00:02, 1.89MiB/s]
+ 36%|███████████████████████████████████▋                                                                | 2.85M/8.01M [00:01<00:02, 1.80MiB/s]
+ 38%|█████████████████████████████████████▉                                                              | 3.03M/8.01M [00:01<00:04, 1.23MiB/s]
+[gw4] PASSED tests/functional/strategy/test_fees.py::test_max_fees 
+[gw2] PASSED tests/functional/vault/test_config.py::test_vault_setParams[name-setName-NewName yVault-False] 
+ 40%|████████████████████████████████████████▏                                                            | 3.18M/8.01M [00:01<00:05, 892kiB/s]
+ 45%|█████████████████████████████████████████████▉                                                       | 3.64M/8.01M [00:02<00:07, 579kiB/s]
+ 47%|███████████████████████████████████████████████▍                                                     | 3.76M/8.01M [00:02<00:07, 538kiB/s]
+tests/functional/strategy/test_config.py::test_strategy_setParams[keeper-setKeeper-strategist-None] 
+ 48%|████████████████████████████████████████████████▏                                                    | 3.82M/8.01M [00:02<00:08, 514kiB/s]
+[gw2] PASSED tests/functional/vault/test_config.py::test_vault_setParams[symbol-setSymbol-yvNEW-False] 
+ 49%|█████████████████████████████████████████████████▌                                                   | 3.93M/8.01M [00:03<00:08, 483kiB/s]
+ 50%|██████████████████████████████████████████████████▏                                                  | 3.98M/8.01M [00:03<00:08, 470kiB/s]
+ 51%|███████████████████████████████████████████████████▍                                                 | 4.08M/8.01M [00:03<00:08, 465kiB/s]
+tests/functional/strategy/test_misc.py::test_reject_ether 
+ 53%|█████████████████████████████████████████████████████▏                                               | 4.22M/8.01M [00:03<00:08, 451kiB/s]
+ 53%|█████████████████████████████████████████████████████▊                                               | 4.26M/8.01M [00:03<00:08, 435kiB/s]
+ 54%|██████████████████████████████████████████████████████▎                                              | 4.31M/8.01M [00:04<00:08, 419kiB/s]
+tests/functional/vault/test_misc.py::test_sweep 
+ 55%|███████████████████████████████████████████████████████▉                                             | 4.44M/8.01M [00:04<00:08, 411kiB/s]
+ 56%|████████████████████████████████████████████████████████▍                                            | 4.48M/8.01M [00:04<00:09, 388kiB/s]
+ 57%|█████████████████████████████████████████████████████████▍                                           | 4.56M/8.01M [00:04<00:09, 383kiB/s]
+[gw2] PASSED tests/functional/vault/test_config.py::test_vault_setParams[emergencyShutdown-setEmergencyShutdown-True-True] 
+ 57%|█████████████████████████████████████████████████████████▉                                           | 4.60M/8.01M [00:04<00:09, 364kiB/s]
+ 59%|███████████████████████████████████████████████████████████▊                                         | 4.74M/8.01M [00:05<00:10, 316kiB/s]
+ 60%|████████████████████████████████████████████████████████████▌                                        | 4.80M/8.01M [00:05<00:10, 301kiB/s]
+tests/functional/vault/test_permit.py::test_permit[False] 
+ 60%|████████████████████████████████████████████████████████████▉                                        | 4.83M/8.01M [00:05<00:10, 296kiB/s]
+ 61%|█████████████████████████████████████████████████████████████▎                                       | 4.86M/8.01M [00:05<00:10, 291kiB/s]
+ 62%|██████████████████████████████████████████████████████████████▍                                      | 4.95M/8.01M [00:06<00:10, 284kiB/s]
+ 63%|███████████████████████████████████████████████████████████████▉                                     | 5.07M/8.01M [00:06<00:10, 275kiB/s]
+ 64%|████████████████████████████████████████████████████████████████▌                                    | 5.12M/8.01M [00:06<00:10, 274kiB/s]
+ 64%|████████████████████████████████████████████████████████████████▉                                    | 5.15M/8.01M [00:06<00:10, 270kiB/s]
+ 65%|█████████████████████████████████████████████████████████████████▎                                   | 5.18M/8.01M [00:06<00:10, 271kiB/s]
+ 65%|█████████████████████████████████████████████████████████████████▋                                   | 5.20M/8.01M [00:06<00:10, 267kiB/s]
+tests/functional/vault/test_config.py::test_vault_setParams[rewards-setRewards-None-False] 
+ 65%|█████████████████████████████████████████████████████████████████▉                                   | 5.23M/8.01M [00:07<00:10, 262kiB/s]
+[gw6] PASSED tests/functional/vault/test_permit.py::test_permit[False] 
+ 66%|██████████████████████████████████████████████████████████████████▋                                  | 5.28M/8.01M [00:07<00:10, 248kiB/s]
+tests/functional/vault/test_permit.py::test_permit_wrong_signature 
+ 70%|██████████████████████████████████████████████████████████████████████▉                              | 5.63M/8.01M [00:08<00:09, 251kiB/s]
+[gw6] PASSED tests/functional/vault/test_permit.py::test_permit_wrong_signature 
+ 71%|███████████████████████████████████████████████████████████████████████▎                             | 5.65M/8.01M [00:08<00:09, 248kiB/s]
+ 71%|███████████████████████████████████████████████████████████████████████▋                             | 5.68M/8.01M [00:08<00:09, 239kiB/s]
+tests/functional/vault/test_config.py::test_vault_setParams[management-setManagement-None-False] 
+ 72%|████████████████████████████████████████████████████████████████████████▎                            | 5.73M/8.01M [00:09<00:09, 235kiB/s]
+ 72%|█████████████████████████████████████████████████████████████████████████▏                           | 5.80M/8.01M [00:09<00:09, 231kiB/s]
+[gw1] PASSED tests/functional/strategy/test_config.py::test_strategy_setParams[profitFactor-setProfitFactor-strategist-1000] 
+ 73%|█████████████████████████████████████████████████████████████████████████▊                           | 5.85M/8.01M [00:09<00:09, 230kiB/s]
+ 73%|██████████████████████████████████████████████████████████████████████████                           | 5.87M/8.01M [00:09<00:09, 227kiB/s]
+ 75%|███████████████████████████████████████████████████████████████████████████▌                         | 5.99M/8.01M [00:10<00:08, 231kiB/s]
+ 76%|████████████████████████████████████████████████████████████████████████████▊                        | 6.09M/8.01M [00:10<00:08, 229kiB/s]
+ 76%|█████████████████████████████████████████████████████████████████████████████                        | 6.11M/8.01M [00:10<00:08, 227kiB/s]
+ 77%|█████████████████████████████████████████████████████████████████████████████▎                       | 6.13M/8.01M [00:10<00:08, 223kiB/s]
+ 77%|█████████████████████████████████████████████████████████████████████████████▋                       | 6.16M/8.01M [00:10<00:08, 225kiB/s]
+ 78%|███████████████████████████████████████████████████████████████████████████████                      | 6.27M/8.01M [00:11<00:07, 232kiB/s]
+[gw1] PASSED tests/functional/strategy/test_config.py::test_strategy_setParams[debtThreshold-setDebtThreshold-strategist-1000] 
+ 79%|███████████████████████████████████████████████████████████████████████████████▍                     | 6.30M/8.01M [00:11<00:07, 230kiB/s]
+ 79%|████████████████████████████████████████████████████████████████████████████████                     | 6.34M/8.01M [00:11<00:07, 223kiB/s]
+ 80%|████████████████████████████████████████████████████████████████████████████████▎                    | 6.37M/8.01M [00:11<00:07, 219kiB/s]
+ 80%|████████████████████████████████████████████████████████████████████████████████▊                    | 6.41M/8.01M [00:12<00:07, 212kiB/s]
+ 80%|█████████████████████████████████████████████████████████████████████████████████                    | 6.43M/8.01M [00:12<00:07, 211kiB/s]
+ 81%|█████████████████████████████████████████████████████████████████████████████████▋                   | 6.47M/8.01M [00:12<00:07, 207kiB/s]
+ 81%|██████████████████████████████████████████████████████████████████████████████████▏                  | 6.52M/8.01M [00:12<00:07, 207kiB/s]
+ 82%|██████████████████████████████████████████████████████████████████████████████████▋                  | 6.56M/8.01M [00:12<00:06, 208kiB/s]
+ 84%|████████████████████████████████████████████████████████████████████████████████████▍                | 6.69M/8.01M [00:13<00:06, 207kiB/s]
+ 84%|████████████████████████████████████████████████████████████████████████████████████▉                | 6.73M/8.01M [00:13<00:06, 204kiB/s]
+ 85%|█████████████████████████████████████████████████████████████████████████████████████▍               | 6.77M/8.01M [00:13<00:05, 207kiB/s]
+ 85%|█████████████████████████████████████████████████████████████████████████████████████▋               | 6.80M/8.01M [00:13<00:05, 205kiB/s]
+tests/functional/vault/test_config.py::test_vault_setParams[depositLimit-setDepositLimit-1000-False] 
+ 86%|██████████████████████████████████████████████████████████████████████████████████████▌              | 6.86M/8.01M [00:14<00:05, 208kiB/s]
+ 86%|██████████████████████████████████████████████████████████████████████████████████████▊              | 6.88M/8.01M [00:14<00:05, 211kiB/s]
+ 86%|███████████████████████████████████████████████████████████████████████████████████████              | 6.91M/8.01M [00:14<00:05, 213kiB/s]
+ 87%|███████████████████████████████████████████████████████████████████████████████████████▋             | 6.95M/8.01M [00:14<00:05, 211kiB/s]
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████            | 7.06M/8.01M [00:15<00:04, 207kiB/s]
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████▎           | 7.08M/8.01M [00:15<00:04, 206kiB/s]
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████▎          | 7.16M/8.01M [00:15<00:04, 207kiB/s]
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████▋          | 7.19M/8.01M [00:15<00:03, 208kiB/s]
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████▏         | 7.23M/8.01M [00:16<00:03, 207kiB/s]
+ 91%|███████████████████████████████████████████████████████████████████████████████████████████▍         | 7.25M/8.01M [00:16<00:03, 207kiB/s]
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████▎      | 7.48M/8.01M [00:17<00:02, 197kiB/s]
+[gw7] PASSED tests/functional/vault/test_shares.py::test_emergencyShutdown 
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████▌      | 7.50M/8.01M [00:17<00:02, 196kiB/s]
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████▊      | 7.52M/8.01M [00:17<00:02, 192kiB/s]
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████████▎    | 7.64M/8.01M [00:18<00:01, 191kiB/s]
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████▊    | 7.68M/8.01M [00:18<00:01, 192kiB/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▌   | 7.74M/8.01M [00:18<00:01, 190kiB/s]
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████   | 7.78M/8.01M [00:18<00:01, 189kiB/s]
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████████  | 7.86M/8.01M [00:19<00:00, 187kiB/s]
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████████████▌ | 7.89M/8.01M [00:19<00:00, 184kiB/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 8.01M/8.01M [00:20<00:00, 397kiB/s]
+solc 0.5.16 successfully installed at: /home/rodrigo/.solcx/solc-v0.5.16
+solc 0.5.16 already installed at: /home/rodrigo/.solcx/solc-v0.5.16
+
+[gw7] PASSED tests/functional/vault/test_shares.py::test_transferFrom 
+[gw2] PASSED tests/functional/vault/test_config.py::test_vault_setGovernance 
+[gw5] PASSED tests/functional/vault/test_strategies.py::test_ordering 
+tests/functional/vault/test_strategies.py::test_reporting 
+[gw5] PASSED tests/functional/vault/test_strategies.py::test_reporting 
+tests/functional/vault/test_strategies.py::test_reporting_gains_without_fee 
+[gw5] PASSED tests/functional/vault/test_strategies.py::test_reporting_gains_without_fee 
+tests/functional/vault/test_strategies.py::test_update_debtRatio_to_add_second_strategy 
+[gw5] PASSED tests/functional/vault/test_strategies.py::test_update_debtRatio_to_add_second_strategy 
+[gw4] PASSED tests/functional/vault/test_withdrawal.py::test_forced_withdrawal 
+tests/functional/vault/test_withdrawal.py::test_progressive_withdrawal 
+[gw4] PASSED tests/functional/vault/test_withdrawal.py::test_progressive_withdrawal 
+tests/functional/vault/test_withdrawal.py::test_withdrawal_with_empty_queue 
+[gw4] PASSED tests/functional/vault/test_withdrawal.py::test_withdrawal_with_empty_queue 
+tests/functional/vault/test_withdrawal.py::test_withdrawal_with_reentrancy 
+[gw4] PASSED tests/functional/vault/test_withdrawal.py::test_withdrawal_with_reentrancy 
+[gw3] PASSED tests/functional/registry/test_release.py::test_release_management 
+tests/functional/strategy/test_startup.py::test_startup 
+[gw0] PASSED tests/functional/registry/test_deployment.py::test_deployment_management 
+tests/functional/registry/test_deployment.py::test_experimental_deployments 
+[gw3] PASSED tests/functional/strategy/test_startup.py::test_startup 
+[gw0] PASSED tests/functional/registry/test_deployment.py::test_experimental_deployments 
+tests/functional/strategy/test_shutdown.py::test_emergency_shutdown 
+[gw0] PASSED tests/functional/strategy/test_shutdown.py::test_emergency_shutdown 
+tests/functional/strategy/test_shutdown.py::test_emergency_exit 
+[gw0] PASSED tests/functional/strategy/test_shutdown.py::test_emergency_exit 
+
+======================================================= 80 passed in 142.93s (0:02:22) ========================================================
+rodrigo@rodrigo-Lenovo-IdeaPad-S340-15IWL:~/code/dda/yearn-vaults$ 
+
